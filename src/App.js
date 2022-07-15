@@ -1,22 +1,16 @@
-import logo from './logo.svg';
+import Navbar from './component/naviagation/Navigation';
+import Card from './component/card';
+import { useState, useEffect } from react;
 import './App.css';
+import { findDOMNode } from 'react-dom';
 
 function App() {
   return (
+
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Navbar />
+      <Card imageUrl={'https://www.istockphoto.com/photos/food-plate'} name={'Test Food'} description= {"hjsjadgucwacuwac"} price = {500}  />
       </header>
     </div>
   );
